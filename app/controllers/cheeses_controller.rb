@@ -1,5 +1,5 @@
 class CheesesController < ApplicationController
-  before_action :current_user
+  before_action :ensure_current_user
 
   def index
     @cheeses = Cheese.all
