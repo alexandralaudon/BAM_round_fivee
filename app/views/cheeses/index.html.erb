@@ -1,1 +1,7 @@
 <h1>List of Cheeses</h1>
+
+<%= link_to 'New Cheese', new_cheese_path %>
+
+<% @cheeses.each do |cheese| %>
+  <%= link_to "#{cheese.name} - $#{cheese.price_per_lb}", cheese_path(cheese) %>
+<% end %>

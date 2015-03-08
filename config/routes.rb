@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   post 'sign-up', to: 'registrations#create'
   get 'sign-in', to: 'authentication#new'
   post 'sign-in', to: 'authentication#create'
-  
-  resources :cheeses, only: [:index]
+
+  resources :cheeses
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
