@@ -1,0 +1,13 @@
+<h1>Sign Up Form</h1>
+
+<%= form_for @user, url:sign_up_path do |u| %>
+
+  <%= u.label :email %>
+  <%= u.email_field :email %>
+
+  <%= u.label :password %>
+  <%= u.password_field :password %>
+
+  <%= u.submit "Create User" %>
+
+<% end %>
